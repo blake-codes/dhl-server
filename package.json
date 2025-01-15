@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "server.ts",
   "scripts": {
-    "start": "node server.ts",
-    "dev": "nodemon server.ts"
+    "build": "tsc",
+    "start": "ts-node server.ts",
+    "dev": "nodemon --exec ts-node server.ts"
+  },
+  "engines": {
+    "node": "20.x"
   },
   "repository": "https://github.com/blake-codes/dhl-server.git",
   "author": "blake-codes <blakeharrison4u@gmail.com>",
